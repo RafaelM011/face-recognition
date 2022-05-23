@@ -38,7 +38,7 @@ class Register extends Component{
         const wrong = document.getElementById('incorrectRegister');
         const text = document.createTextNode('Please fill out all the fields');
         if(username && email && password){
-            fetch('http://localhost:3000/register',{
+            fetch('https://secure-forest-63266.herokuapp.com/register',{
                 method: 'put',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({

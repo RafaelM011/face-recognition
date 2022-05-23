@@ -63,7 +63,7 @@ class App extends Component {
 
     // Display a box surrounding a face
     onButtonClick = () => {
-        fetch('http://localhost:3000/image',{
+        fetch('https://secure-forest-63266.herokuapp.com//image',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -82,7 +82,7 @@ class App extends Component {
 
     // Function that updates the entry count of the user
     updateEntryCount = () => {
-        fetch('http://localhost:3000/update',{
+        fetch('https://secure-forest-63266.herokuapp.com//update',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

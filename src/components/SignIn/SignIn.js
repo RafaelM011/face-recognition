@@ -30,7 +30,7 @@ class SignIn extends Component{
 
     // Sign in to the user's account
     signIn = () => {
-        fetch('http://localhost:3000/signin',{
+        fetch('https://secure-forest-63266.herokuapp.com/signin',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
