@@ -40,10 +40,7 @@ class Register extends Component{
         if(username && email && password){
             fetch('https://secure-forest-63266.herokuapp.com/register',{
                 method: 'put',
-                headers: {
-                    'Content-Type': 'application/json', 
-                    "Access-Control-Allow-Origin": "https://rafaelm011.github.io"
-                },
+                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
                     username: this.state.username,
                     email: this.state.email,
