@@ -1,0 +1,86 @@
+.flexContainer {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.register {
+    width: 375px;
+    height: 350px;
+    background-color: transparent;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px white;
+    transition: 1s;
+    text-align: center;
+    position: relative;
+}
+
+/* .register:hover {
+    transform: scale(1.04);
+} */
+
+#headerReg{
+    font-size: 45px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;    
+}
+
+#backButton{
+    width: 30px;
+    height: 30px;
+    position: absolute; 
+    left: 20px;
+    top: 15px;
+    border: none;
+    background: none;
+}
+
+#backButton:hover{
+    transform: scale(1.2);
+}
+
+#backButton:active{
+    transform: scale(1);
+}
+
+.registerInput{
+    width: 225px;
+    height: 20px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    background: none;
+    border: 2px solid black;
+    outline: none;
+}
+
+.registerInput:hover{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.registerInput:focus{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+#registerButton{
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#incorrectRegister{
+    margin-bottom: 7px;
+    color: #fff;
+    font-weight: 900; 
+    position: absolute;
+    left: 45px;
+    top: 65px;
+}

@@ -1,0 +1,11 @@
+.SignOut{
+    display: inline-block;
+    width: 100vw;
+    text-align: right;
+    margin: 0px;
+}
+
+#btn-signout{
+    cursor: pointer;
+    text-decoration: underline;
+}
