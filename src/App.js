@@ -30,7 +30,7 @@ class App extends Component {
         fetch('https://secure-forest-63266.herokuapp.com/')
         .then(res => res.json())
         .then( () => this.setState({serverOn: true}))
-        .catch()
+        .catch(() => this.initializeServer());
     }
 
     // Redirects the website to a desired page
