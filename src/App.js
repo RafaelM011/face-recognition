@@ -15,6 +15,7 @@ class App extends Component {
     constructor(){
         super()
         this.state = {
+            serverOn: false,
             inputValue: '',
             route: 'signIn',
             boundingBoxes: [],
@@ -23,6 +24,13 @@ class App extends Component {
                 entries: ''
             }
         }
+    }
+
+    initializeServer = () => {
+        fetch('https://secure-forest-63266.herokuapp.com/')
+        .then(res => res.json())
+        .then( () => this.setState({serverOn: true}))
+        .catch()
     }
 
     // Redirects the website to a desired page
@@ -111,7 +119,13 @@ class App extends Component {
 
     // Renders the website
     render(){
-        const {inputValue, route,boundingBoxes, user} = this.state;
+        const {inputValue, route,boundingBoxes, user} = this.state;        
+        // Initialize Server
+        if (!this.state.serverOn) {
+            this.initializeServer();
+            return;
+        }
+        
         //SignIn Page
         if(route === 'signIn'){
            return(
